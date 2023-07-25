@@ -33,6 +33,7 @@
                         gray1: 'rgba(18, 18, 18, 0.80)',
                         gray2: 'rgba(18, 18, 18, 0.60)',
                         redAccent: '#F85559',
+                        borderCol: 'rgba(18, 18, 18, 0.10)',
 
                     },
                 }
@@ -102,8 +103,8 @@
         </div>
     </header>
     <!-- carousel -->
-    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-10">
-        <div class="carousel h-[250px] md:h-[500px] rounded-lg ">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-10 lg:mb-[-70px]">
+        <div class="carousel h-[250px] md:h-[500px] rounded-lg relative">
             <div id="slide1" class="carousel-item relative w-full">
                 <img class="absolute bg-transparent opacity-50 h-full" src="./images/Rectangle7.png" alt="">
                 <img src="./images/banner1.png" class="w-full" />
@@ -202,7 +203,276 @@
             </div>
 
         </div>
+        <div class="mx-10 bg-white py-10 rounded-lg shadow-lg hidden lg:flex justify-center gap-10 translate-y-[-50%]">
+            <div class="flex flex-col items-center">
+                <img src="./images/fruit1.png" alt="">
+                <p class="text-xl font-medium text-gray1">Grape</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./images/fruit2.png" alt="">
+                <p class="text-xl font-medium text-gray1">Orange</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./images/fruit3.png" alt="">
+                <p class="text-xl font-medium text-gray1">Mango</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./images/fruit4.png" alt="">
+                <p class="text-xl font-medium text-gray1">Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./images/fruit5.png" alt="">
+                <p class="text-xl font-medium text-gray1">Pomegranate</p>
+            </div>
+        </div>
     </section>
+    <!-- deal of the day -->
+    <section class="max-w-screen-xl mx-auto px-8 md-px-16 lg:px-24 py-5 mb-10">
+        <div class="flex flex-col gap-5 md:flex-row justify-between items-center mb-5">
+            <div class="space-y-4">
+                <h1 class="text-5xl font-extrabold text-headerText">Deal Of The Day</h1>
+                <p class="text-base font-medium text-gray2 text-center md:text-left">Contrary to popular belief, is not
+                    simply random text.
+                    It has roots <br> in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                    old.
+                </p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max items-center">
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-headerText text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        <p class="text-base font-medium text-gray2">Days</p>
+                    </div>
+                    <span class="text-3xl">:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-headerText text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        <p class="text-base font-medium text-gray2">Hours</p>
+                    </div>
+                    <span class="text-3xl">:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-headerText text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        <p class="text-base font-medium text-gray2">Mins</p>
+                    </div>
+                    <span class="text-3xl">:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-headerText text-5xl">
+                            <span style="--value:52;"></span>
+                        </span>
+                        <p class="text-base font-medium text-gray2">Secs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-5">
+                    <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                    <p class="text-base font-medium text-gray2">Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <a class="text-lg font-bold text-redAccent" href="#apple">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-5">
+                    <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                    <p class="text-base font-medium text-gray2">Oranges</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <a class="text-lg font-bold text-redAccent" href="#orange">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-5">
+                    <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                    <p class="text-base font-medium text-gray2">Red Dragon</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <a class="text-lg font-bold text-redAccent" href="#dragon">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-5">
+                    <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                    <p class="text-base font-medium text-gray2">Banana</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <a class="text-lg font-bold text-redAccent" href="#banana">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- modals -->
+    <div class="modal" id="apple">
+        <div class="modal-box">
+            <div class="card">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-4xl font-extrabold text-headertext">Apples</h2>
+                    <p class="text-base font-medium text-gray2">Professional employees are there for you to pick the
+                        most amazing and fresh fruits.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <div class="modal-action">
+                            <a href="#"
+                                class="btn border-redAccent text-redAccent normal-case font-bold bg-white hover:bg-redAccent hover:text-white hover:border-0">Close</a>
+                            <a href=""
+                                class="btn bg-redAccent text-white normal-case font-bold hover:bg-white hover:text-redAccent">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="dragon">
+        <div class="modal-box">
+            <div class="card">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-4xl font-extrabold text-headertext">Red Dragon</h2>
+                    <p class="text-base font-medium text-gray2">Professional employees are there for you to pick the
+                        most amazing and fresh fruits.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <div class="modal-action">
+                            <a href="#"
+                                class="btn border-redAccent text-redAccent normal-case font-bold bg-white hover:bg-redAccent hover:text-white hover:border-0">Close</a>
+                            <a href=""
+                                class="btn bg-redAccent text-white normal-case font-bold hover:bg-white hover:text-redAccent">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="orange">
+        <div class="modal-box">
+            <div class="card">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-4xl font-extrabold text-headertext">Oranges</h2>
+                    <p class="text-base font-medium text-gray2">Professional employees are there for you to pick the
+                        most amazing and fresh fruits.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <div class="modal-action">
+                            <a href="#"
+                                class="btn border-redAccent text-redAccent normal-case font-bold bg-white hover:bg-redAccent hover:text-white hover:border-0">Close</a>
+                            <a href=""
+                                class="btn bg-redAccent text-white normal-case font-bold hover:bg-white hover:text-redAccent">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="banana">
+        <div class="modal-box">
+            <div class="card">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-4xl font-extrabold text-headertext">Banana</h2>
+                    <p class="text-base font-medium text-gray2">Professional employees are there for you to pick the
+                        most amazing and fresh fruits.</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    </div>
+                    <div class="card-actions">
+                        <div class="modal-action">
+                            <a href="#"
+                                class="btn border-redAccent text-redAccent normal-case font-bold bg-white hover:bg-redAccent hover:text-white hover:border-0">Close</a>
+                            <a href=""
+                                class="btn bg-redAccent text-white normal-case font-bold hover:bg-white hover:text-redAccent">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
