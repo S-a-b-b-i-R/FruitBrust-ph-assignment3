@@ -69,7 +69,6 @@
                         </svg>
                     </button>
                 </div>
-
                 <div class="dropdown">
                     <ul tabindex="0"
                         class="menu menu-md dropdown-content rounded-xl mt-3 z-[1] lg:hidden translate-x-[-50%] bg-white p-2 text-lg font-normal">
@@ -77,6 +76,19 @@
                         <li><a class="whitespace-nowrap">About Us</a></li>
                         <li><a class="whitespace-nowrap">Shop</a></li>
                         <li><a class="whitespace-nowrap">All Fruits</a></li>
+                        <li>
+                            <div class="relative">
+                                <input type="text" placeholder="Search"
+                                    class="input input-bordered rounded-full w-32" />
+                                <button class="btn btn-ghost btn-circle absolute translate-x-[200%]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
                     </ul>
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -85,11 +97,112 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-
                 </div>
             </div>
         </div>
     </header>
+    <!-- carousel -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-10">
+        <div class="carousel h-[250px] md:h-[500px] rounded-lg ">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img class="absolute bg-transparent opacity-50 h-full" src="./images/Rectangle7.png" alt="">
+                <img src="./images/banner1.png" class="w-full" />
+                <div
+                    class="flex flex-col gap-1 w-full md:w-[50%] md:gap-6 justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <h1 class="text-3xl lg:text-7xl font-extrabold lg:font-extrabold text-textWhite text-center">Exotic
+                        tastes at your
+                        doorstep</h1>
+                    <p class="text-xs md:text-base lg:text-xl lg:font-medium text-textWhite text-center">We supply
+                        highly
+                        quality organic products</p>
+                    <button class="btn border-0 bg-redAccent text-textWhite hover:bg-white hover:text-redAccent">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❮</a>
+                    <a href="#slide2"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❯</a>
+                </div>
+                <div>
+                    <img src="./images/" alt="">
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img class="absolute bg-transparent opacity-50 h-full" src="./images/Rectangle7.png" alt="">
+                <img src="./images/banner2.png" class="w-full" />
+                <div
+                    class="flex flex-col gap-1 w-full md:w-[50%] md:gap-6 justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <h1 class="text-3xl lg:text-7xl font-extrabold lg:font-extrabold text-textWhite text-center">Exotic
+                        tastes at your
+                        doorstep</h1>
+                    <p class="text-xs md:text-base lg:text-xl lg:font-medium text-textWhite text-center">We supply
+                        highly
+                        quality organic products</p>
+                    <button class="btn border-0 bg-redAccent text-textWhite hover:bg-white hover:text-redAccent">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❮</a>
+                    <a href="#slide3"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❯</a>
+                </div>
+                <div>
+                    <img src="./images/" alt="">
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img class="absolute bg-transparent opacity-50 h-full" src="./images/Rectangle7.png" alt="">
+                <img src="./images/banner3.png" class="w-full" />
+                <div
+                    class="flex flex-col gap-1 w-full md:w-[50%] md:gap-6 justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <h1 class="text-3xl lg:text-7xl font-extrabold lg:font-extrabold text-textWhite text-center">Exotic
+                        tastes at your
+                        doorstep</h1>
+                    <p class="text-xs md:text-base lg:text-xl lg:font-medium text-textWhite text-center">We supply
+                        highly
+                        quality organic products</p>
+                    <button class="btn border-0 bg-redAccent text-textWhite hover:bg-white hover:text-redAccent">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❮</a>
+                    <a href="#slide4"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❯</a>
+                </div>
+                <div>
+                    <img src="./images/" alt="">
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img class="absolute bg-transparent opacity-50 h-full" src="./images/Rectangle7.png" alt="">
+                <img src="./images/banner4.png" class="w-full" />
+                <div
+                    class="flex flex-col gap-1 w-full md:w-[50%] md:gap-6 justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <h1 class="text-3xl lg:text-7xl font-extrabold lg:font-extrabold text-textWhite text-center">Exotic
+                        tastes at your
+                        doorstep</h1>
+                    <p class="text-xs md:text-base lg:text-xl lg:font-medium text-textWhite text-center">We supply
+                        highly
+                        quality organic products</p>
+                    <button class="btn border-0 bg-redAccent text-textWhite hover:bg-white hover:text-redAccent">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❮</a>
+                    <a href="#slide1"
+                        class="btn border-0 btn-circle bg-headerText text-textWhite hover:text-redAccent">❯</a>
+                </div>
+                <div>
+                    <img src="./images/" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
